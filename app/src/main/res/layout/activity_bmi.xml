@@ -117,7 +117,8 @@
                 app:layout_constraintEnd_toEndOf="@+id/HeightEt"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/HeightEt"
-                app:layout_constraintTop_toBottomOf="@+id/HeightEt" />
+                app:layout_constraintTop_toBottomOf="@+id/HeightEt"
+                tools:ignore="Autofill,HardcodedText" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -142,12 +143,15 @@
         android:layout_marginTop="24dp"
         android:backgroundTint="@color/black"
         android:text="CALCULATE"
+        android:textStyle="italic|bold"
         app:layout_constraintEnd_toEndOf="@+id/cardView1"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="@+id/cardView1"
-        app:layout_constraintTop_toBottomOf="@+id/cardView1" />
+        app:layout_constraintTop_toBottomOf="@+id/cardView1"
+        tools:ignore="HardcodedText" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/calCard"
         android:visibility="gone"
         android:layout_width="300dp"
         android:layout_height="150dp"
